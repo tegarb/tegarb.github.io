@@ -73,10 +73,12 @@
 			</div>
 			<div class="row justify-content-center fs-5 text-center">
 				<div class="col-md-4" data-aos="fade-right">
-					<p>Nama saya <strong>Tegar Bayu</strong> Bersekolah di SMKN 5 Malang, Umur 17 tahun, dan belum berkeluarga.</p>
+					<p>Nama saya <strong>Tegar Bayu</strong> Bersekolah di SMKN 5 Malang, Umur 17 tahun, dan belum
+						berkeluarga.</p>
 				</div>
 				<div class="col-md-4" data-aos="fade-left">
-					<p>Hobi saya berolahraga seperti <strong>Jogging</strong> dan bermain <strong>Sepak Bola</strong> bersama teman-teman.</p>
+					<p>Hobi saya berolahraga seperti <strong>Jogging</strong> dan bermain <strong>Sepak Bola</strong>
+						bersama teman-teman.</p>
 				</div>
 			</div>
 		</div>
@@ -97,7 +99,8 @@
 				</div>
 			</div>
 			<div class="container text-center motto fs-5 fst-italic"><strong>"</strong> Tiada kata terlambat untuk
-				Menjadi kuat bukan berarti tidak pernah lelah, itu berarti kamu memiliki kekuatan untuk bangkit kembali setelah beristirahat <strong>"</strong></div>
+				Menjadi kuat bukan berarti tidak pernah lelah, itu berarti kamu memiliki kekuatan untuk bangkit kembali
+				setelah beristirahat <strong>"</strong></div>
 		</div>
 
 		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
@@ -202,7 +205,8 @@
 	</script>
 
 	<script>
-		const scriptURL = 'https://script.google.com/macros/s/AKfycbzpf6cUX7YnooThYLwVdanbobUxE0QIhjdcPpfLwjV_eiMjOCovZ2rdll-Z4MWhS0mT/exec';
+		const scriptURL = 'https://script.google.com/macros/s/AKfycbz0KB_OIqeNS9nk8voZEIa87Y3kW56PvCJlGAz6_7YMkMtsm56jDPYKZxmhvZ7fA6tdbQ/exec';
+		// const scriptURL = 'https://script.google.com/macros/s/AKfycbxna9GLBPhhokOV1QmgNa1O8vFqitwPDiwcx8MAuCI2xQ1XeJWblJDrUYRHDlfEQng-/exec';
 		const form = document.forms['kontak'];
 		const btnKirim = document.querySelector('.btn-kirim');
 		const btnLoading = document.querySelector('.btn-loading');
@@ -214,7 +218,7 @@
 			// tampilkan tombol loading, hilangkan tombol kirim
 			btnLoading.classList.toggle('d-none');
 			btnKirim.classList.toggle('d-none');
-			fetch(scriptURL, {method: 'POST', body: new FormData(form)})
+			fetch(scriptURL, { method: 'POST', body: new FormData(form) })
 				.then((response) => {
 					// tampilkan tombol kirim, hilangkan tombol loading
 					btnLoading.classList.toggle('d-none');
